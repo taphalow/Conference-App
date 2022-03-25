@@ -2,7 +2,7 @@
     <div class="list">
         <input type="search" placeholder="Search sessions..." oninput={handleSearchKeyInput} />
       <template for:each={sessions} for:item="session" for:index="index">
-        <a key={session.id} class="session">
+        <a key={session.id} class="session" data-index={index} onclick={handleSessionClick}>
             <div>
               <p class="title">{session.name}</p>
               <p class="icon time">{session.dateTime}</p>

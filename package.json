@@ -5,8 +5,10 @@
     "bugs": "https://github.com/taphalow/conference-app/issues",
     "dependencies": {
         "compression": "^1.7.4",
+        "dotenv": "^16.0.0",
         "express": "^4.17.3",
-        "helmet": "^5.0.2"
+        "helmet": "^5.0.2",
+        "jsforce": "^1.0.0"
     },
     "engines": {
         "node": ">=10.13.0",

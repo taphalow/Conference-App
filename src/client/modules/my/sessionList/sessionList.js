@@ -17,6 +17,7 @@ export default class SessionList extends LightningElement {
     const index = event.currentTarget.dataset.index;
     const navigateEvent = new CustomEvent('navigate', {
       detail: {
+        state: 'details',
         sessionId: this.sessions[index].id
       }
     });

@@ -10,4 +10,12 @@ export default class SessionDetails extends LightningElement {
   get sessionId() {
     return this._sessionId;
   }
+  handleSessionsClick() {
+    const navigateEvent = new CustomEvent('navigate', {
+      detail: {
+        state: 'list'
+      }
+    });
+    this.dispatchEvent(navigateEvent);
+  }
 }
